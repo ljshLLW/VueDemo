@@ -23,7 +23,7 @@ export default {
                 imgurl: 'https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20198/b59b8db9f72eb8f54df5bf2155672e9c.jpg'
             },
             {
-                id: '0001',
+                id: '0002',
                 imgurl: 'https://imgs.qunarzz.com/vc/de/3d/1c/2ea7755853fef62ce549153026.jpg_92.jpg'
             }]
         }
@@ -38,7 +38,7 @@ export default {
         overflow: hidden
         width: 100%
         height: 0
-        padding-bottom: 31.25%
+        padding-bottom: 30%
         background: #fff
         .swiper-img
             width: 100%
