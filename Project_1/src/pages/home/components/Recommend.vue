@@ -2,7 +2,7 @@
     <div>
         <div class="recommend-title">热销推荐</div>
         <ul>
-            <li class="item boreder-bottom" v-for="item of recommendList" :key="item.id" >
+            <li class="item boreder-bottom" v-for="item of list" :key="item.id" >
                 <img class="item-img" :src="item.imgUrl" />
                 <div class="item-info">
                     <p class="item-title">{{item.title}}</p>
@@ -18,24 +18,12 @@
 <script>
 export default {
     name: 'HomeRecommend',
+    props: {
+        list: Array
+    },
     data () {
         return {
-            recommendList: [{
-                id: '0001',
-                imgUrl: '//imgs.qunarzz.com/vs_ceph_vs_tts/7ed922df-3fa2-4baa-a266-d1cfa973d225.jpg_r_480x320x90_8959eca4.jpg',
-                title: '成都+重庆+峨乐〈豪华川渝6日游〉',
-                desc: '成都+重庆+峨乐〈豪华川渝6日游〉高端酒店&游船夜览两江+变脸晚会+川味美食'
-            }, {
-                id: '0002',
-                imgUrl: '//imgs.qunarzz.com/vs_ceph_vs_tts/7ed922df-3fa2-4baa-a266-d1cfa973d225.jpg_r_480x320x90_8959eca4.jpg',
-                title: '成都+重庆+峨乐〈豪华川渝6日游〉',
-                desc: '成都+重庆+峨乐〈豪华川渝6日游〉高端酒店&游船夜览两江+变脸晚会+川味美食'
-            }, {
-                id: '0003',
-                imgUrl: '//imgs.qunarzz.com/vs_ceph_vs_tts/7ed922df-3fa2-4baa-a266-d1cfa973d225.jpg_r_480x320x90_8959eca4.jpg',
-                title: '成都+重庆+峨乐〈豪华川渝6日游〉',
-                desc: '成都+重庆+峨乐〈豪华川渝6日游〉高端酒店&游船夜览两江+变脸晚会+川味美食'
-            } ]
+
         }
     }
 }
